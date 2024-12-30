@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Delight - Home</title>
+    <title>Café Delight - Order Online</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,14 +20,26 @@
             </ul>
         </nav>
     </header>
+    <main>
     <section class="background-image">
         <div class="overlay">
-    <section id="home">
-        <h1>Welcome to Café Delight</h1>
-        <p>Experience the finest coffee, delicious pastries, and cozy ambiance.</p>
-    </section>
+
+        <h1>Order Online</h1>
+        <form id="order-form">
+            <label for="item">Select an Item:</label>
+            <select id="item" name="item" required>
+                <option value="">-- Choose an option --</option>
+                <option value="espresso">Espresso</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="muffin">Muffin</option>
+            </select>
+            <br><br>
+            <button type="submit">Place Order</button>
+        </form>
+        <p id="order-message"></p>
         </div>
     </section>
+    </main>
     <footer>
         <p>&copy; 2024 Café Delight. All rights reserved.</p>
     </footer>
